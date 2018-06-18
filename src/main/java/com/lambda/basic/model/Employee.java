@@ -10,6 +10,12 @@ public class Employee {
 	public String empName;
 	@JsonProperty
 	public String department;
+	@JsonProperty
+	public String designation;
+	@JsonProperty
+	public double minsalary;
+	@JsonProperty
+	public double maxsalary;
 	
 	public int getEmpId() {
 		return empId;
@@ -28,6 +34,24 @@ public class Employee {
 	}
 	public void setDepartment(String department) {
 		this.department = department;
+	}
+	public String getDesignation() {
+		return designation;
+	}
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+	public double getMinsalary() {
+		return minsalary;
+	}
+	public void setMinsalary(double minsalary) {
+		this.minsalary = minsalary;
+	}
+	public double getMaxsalary() {
+		return maxsalary;
+	}
+	public void setMaxsalary(double maxsalary) {
+		this.maxsalary = maxsalary;
 	}
 	
 }
